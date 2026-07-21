@@ -1,0 +1,73 @@
+Senior Frontend Engineer
+InnovateTech Solutions — Hybrid (Austin, TX)
+Full-Time Position
+
+ABOUT THE ROLE
+We are seeking a Senior Frontend Engineer to join our core product team. You will own the client-side architecture of our flagship web platform and collaborate closely with product managers.
+
+WHAT YOU'LL DO
+* Architect, develop, and maintain responsive web applications using React v18 and Next.js.
+* Optimize application performance for maximum speed and scalability.
+* Mentor junior developers and participate in code reviews to ensure high code quality.
+
+WHAT YOU MUST BRING
+* Minimum of 5+ years of professional software engineering experience.
+* Masterful command of core web fundamentals: HTML5, CSS3, and modern JavaScript (ES6+).
+* Proven experience building highly interactive user interfaces.
+* Exceptional problem-solving skills and a collaborative team-player mindset.
+
+NICE TO HAVE
+* Experience working with state management libraries like Redux Toolkit.
+* Familiarity with Docker containerization and AWS deployments.
+* A Bachelor's or Master's degree in Computer Science or a related technical field.
+
+WHAT WE OFFER
+* Competitive salary with annual performance bonus.
+* Comprehensive health, dental, and vision insurance coverage.
+* Unlimited Paid Time Off (PTO).
+
+
+output:
+{
+"jobTitle": "Senior Frontend Engineer",
+"company": "InnovateTech Solutions",
+"employmentType": "Full-Time Position",
+"location": "Hybrid (Austin, TX)",
+"requiredSkills": [
+"Masterful command of core web fundamentals",
+"Proven experience building highly interactive user interfaces"
+],
+"preferredSkills": [
+"Experience working with state management libraries like Redux Toolkit",
+"Familiarity with Docker containerization and AWS deployments"
+],
+"requiredExperience": "Minimum of 5+ years of professional software engineering experience.",
+"educationRequirements": [
+"A Bachelor's or Master's degree in Computer Science or a related technical field"
+],
+"responsibilities": [
+"Architect, develop, and maintain responsive web applications using React v18 and Next.js.",
+"Optimize application performance for maximum speed and scalability.",
+"Mentor junior developers and participate in code reviews to ensure high code quality."
+],
+"requiredCertifications": [],
+"technologies": [
+"React v18",
+"Next.js",
+"HTML5",
+"CSS3",
+"modern JavaScript (ES6+)",
+"Redux Toolkit",
+"Docker",
+"AWS"
+],
+"softSkills": [
+"Exceptional problem-solving skills",
+"collaborative team-player mindset"
+],
+"benefits": [
+"Competitive salary with annual performance bonus.",
+"Comprehensive health, dental, and vision insurance coverage.",
+"Unlimited Paid Time Off (PTO)."
+]
+}

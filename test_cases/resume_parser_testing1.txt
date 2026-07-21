@@ -1,0 +1,116 @@
+Alex M.
+alex.m@email.com
+Git / React / Tailwind
+
+Projects:
+* E-commerce site: Built a fast checkout process using React and Stripe.
+* Portfolio: Personal page hosted on Netlify.
+
+Experience:
+Freelance Developer (2024 - Now)
+Built various web applications for small businesses. Handled client communication and code deployment.
+
+{
+
+"candidateName": "Alex M.",
+
+"contactInfo": {
+
+"email": "alex.m@email.com",
+
+"phone": null,
+
+"location": null,
+
+"links": []
+
+},
+
+"education": [],
+
+"workExperience": [
+
+{
+
+"jobTitle": "Freelance Developer",
+
+"company": null,
+
+"location": null,
+
+"startDate": "2024",
+
+"endDate": "Now",
+
+"description": null,
+
+"responsibilities": [
+
+"Built various web applications for small businesses.",
+
+"Handled client communication and code deployment."
+
+],
+
+"accomplishments": []
+
+}
+
+],
+
+"technicalSkills": [
+
+"Git",
+
+"React",
+
+"Tailwind"
+
+],
+
+"softSkills": [],
+
+"projects": [
+
+{
+
+"title": "E-commerce site",
+
+"description": "Built a fast checkout process using React and Stripe.",
+
+"technologies": [
+
+"React",
+
+"Stripe"
+
+],
+
+"role": null
+
+},
+
+{
+
+"title": "Portfolio",
+
+"description": "Personal page hosted on Netlify.",
+
+"technologies": [
+
+"Netlify"
+
+],
+
+"role": null
+
+}
+
+],
+
+"certifications": [],
+
+"achievements": []
+
+} 
+

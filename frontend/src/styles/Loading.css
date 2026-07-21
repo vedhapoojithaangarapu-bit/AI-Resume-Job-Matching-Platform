@@ -1,0 +1,29 @@
+.loading-container {
+  padding-bottom: 56px;
+}
+
+.loading-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--color-ink-soft);
+  margin-top: 24px;
+}
+
+.loading-note::before {
+  content: '';
+  flex-shrink: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-ink-soft);
+  margin-top: 7px;
+}
+
+@media (max-width: 640px) {
+  .loading-container {
+    padding-bottom: 40px;
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "resumeParserOutput": {
+    "candidateName": "Taylor Vance",
+    "technicalSkills": ["React", "Git"]
+  },
+  "jdParserOutput": {
+    "jobTitle": "React Developer",
+    "technologies": ["React", "Git", "TypeScript"]
+  },
+  "workerOutput": {
+    "goal": "Applying for a Job",
+    "candidateFitScore": 95,
+    "careerReadinessScore": null,
+    "matchedSkills": ["React", "Git"],
+    "missingSkills": ["TypeScript"],
+    "overallAnalysis": "The candidate has severe experience gaps and completely inadequate skills for this project.",
+    "confidence": "Low"
+  },
+  "recommendationOutput": {
+    "goal": "Preparing for my Dream Career",
+    "resumeImprovements": [],
+    "skillRecommendations": [
+      {
+        "skill": "React",
+        "priority": "High",
+        "learningObjective": "Learn baseline React syntax."
+      },
+      {
+        "skill": "TypeScript",
+        "priority": "High",
+        "learningObjective": "Learn basic types."
+      }
+    ],
+    "projectRecommendations": [],
+    "certificationRecommendations": [],
+    "learningRoadmap": "Short-term: study every single day",
+    "jobRecommendations": [],
+    "overallRecommendation": "Update your resume."
+  }
+}
+
+
+heres the output:
+{
+"isValid": false,
+"validationStatus": "FAIL",
+"correctedOutput": {
+"resumeParserOutput": {
+"candidateName": "Taylor Vance",
+"technicalSkills": ["React", "Git"]
+},
+"jdParserOutput": {
+"jobTitle": "React Developer",
+"technologies": ["React", "Git", "TypeScript"]
+},
+"workerOutput": {
+"goal": "Applying for a Job",
+"candidateFitScore": 95,
+"careerReadinessScore": null,
+"matchedSkills": ["React", "Git"],
+"missingSkills": ["TypeScript"],
+"overallAnalysis": "The candidate has severe experience gaps and completely inadequate skills for this project.",
+"confidence": "Low"
+},
+"recommendationOutput": {
+"goal": "Preparing for my Dream Career",
+"resumeImprovements": [],
+"skillRecommendations": [
+{
+"skill": "React",
+"priority": "High",
+"learningObjective": "Learn baseline React syntax."
+},
+{
+"skill": "TypeScript",
+"priority": "High",
+"learningObjective": "Learn basic types."
+}
+],
+"projectRecommendations": [],
+"certificationRecommendations": [],
+"learningRoadmap": [
+"Short-term: study every single day"
+],
+"jobRecommendations": [],
+"overallRecommendation": "Update your resume."
+}
+},
+"errors": [
+{
+"category": "LOGICAL_INCONSISTENCY",
+"field": "workerOutput.goal / recommendationOutput.goal",
+"message": "Goal mismatch detected. workerOutput specifies 'Applying for a Job' (Goal A), while recommendationOutput specifies 'Preparing for my Dream Career' (Goal B)."
+},
+{
+"category": "LOGICAL_INCONSISTENCY",
+"field": "workerOutput.overallAnalysis",
+"message": "A high candidateFitScore of 95 is logically inconsistent with the narrative analysis stating that the candidate has 'severe experience gaps and completely inadequate skills'."
+},
+{
+"category": "LOGICAL_INCONSISTENCY",
+"field": "recommendationOutput.skillRecommendations",
+"message": "The skill 'React' is recommended for learning, but it is already listed in matchedSkills. Mastered skills should not be recommended for basic learning."
+},
+{
+"category": "INVALID_TYPE",
+"field": "recommendationOutput.learningRoadmap",
+"message": "The field learningRoadmap is formatted as a string instead of a schema-compliant JSON array."
+},
+{
+"category": "GOAL_VIOLATION",
+"field": "recommendationOutput.learningRoadmap",
+"message": "If evaluating under Goal A ('Applying for a Job' as specified in workerOutput), learningRoadmap must be an empty array []. If evaluating under Goal B ('Preparing for my Dream Career' as specified in recommendationOutput), learningRoadmap must contain structured Short-term, Medium-term, and Long-term phases."
+},
+{
+"category": "GOAL_VIOLATION",
+"field": "recommendationOutput.jobRecommendations",
+"message": "If evaluating under Goal B ('Preparing for my Dream Career'), jobRecommendations must not be empty. If evaluating under Goal A, jobRecommendations must be an empty array []."
+}
+],
+"warnings": [],
+"summary": "Validation failed due to critical logical inconsistencies, goal mismatches, schema/type errors, and goal-specific structural violations across the worker and recommendation modules."
+}

@@ -1,0 +1,109 @@
+{
+  "activeGoal": "Applying for a Job",
+  "workerPromptOutput": {
+    "goal": "Applying for a Job",
+    "candidateFitScore": 72,
+    "careerReadinessScore": null,
+    "matchedSkills": [
+      "JavaScript",
+      "Tailwind CSS",
+      "HTML5",
+      "CSS3",
+      "Git",
+      "Building responsive layouts with utility classes",
+      "REST API Integration"
+    ],
+    "missingSkills": [
+      "React",
+      "TypeScript",
+      "Communication"
+    ],
+    "transferableSkills": [
+      "Teamwork"
+    ],
+    "experienceMatch": "The candidate has approximately 8 months of professional frontend experience, which is slightly below the required 1+ years.",
+    "educationMatch": "The candidate's B.S. in Information Technology satisfies the requirement for a Bachelor's degree in IT, CS, or a related field.",
+    "projectMatch": "No personal or professional projects are documented on the resume to serve as additional technical evidence.",
+    "overallAnalysis": "The candidate's core technical profile strongly matches the immediate job requirements, specifically regarding Tailwind CSS and REST API integration. Educational requirements are also met. The main gaps are a slight shortfall in the required years of experience and the absence of preferred skills like React and TypeScript.",
+    "confidence": "Medium"
+  }
+}
+
+
+heres the output:
+{
+"goal": "Applying for a Specific Job",
+"resumeImprovements": [
+{
+"section": "Projects",
+"suggestion": "Add a dedicated projects section to showcase practical implementation of JavaScript, Tailwind CSS, and REST API integration. This will directly address the absence of project evidence and help mitigate the minor experience gap.",
+"example": "Interactive Dashboard: Developed a responsive single-page application using vanilla JavaScript and Tailwind CSS that integrated third-party REST APIs to display real-time metrics, implementing optimized API polling and caching."
+},
+{
+"section": "Work Experience",
+"suggestion": "Integrate structured communication and teamwork outcomes into the bullets of your previous frontend role to cover the missing soft skill requirements.",
+"example": "Collaborated with design and QA teams in an agile environment, communicating technical specifications clearly to align deliverables and reduce feature integration errors by 15%."
+},
+{
+"section": "Technical Skills",
+"suggestion": "Add a 'Familiar with' or 'Currently Learning' subsection to list React and TypeScript, signaling to hiring managers that you are actively closing key skill gaps.",
+"example": "Core Skills: JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Git, REST API Integration. Currently Upskilling: React, TypeScript."
+}
+],
+"skillRecommendations": [
+{
+"skill": "React",
+"priority": "High",
+"learningObjective": "Master React fundamentals including components, JSX, props, state management using hooks (useState, useEffect), and consuming REST APIs within React components."
+},
+{
+"skill": "TypeScript",
+"priority": "Medium",
+"learningObjective": "Learn basic typing, interfaces, type aliases, and how to write type-safe JavaScript code to minimize runtime exceptions."
+},
+{
+"skill": "Technical Communication",
+"priority": "Medium",
+"learningObjective": "Develop the ability to clearly articulate technical trade-offs, draft descriptive Git pull request summaries, and document API integration steps."
+}
+],
+"projectRecommendations": [
+{
+"title": "React and Tailwind CSS API Dashboard",
+"description": "An interactive, multi-view dashboard that fetches and displays real-time data from a public REST API. Includes searchable and filterable lists, dynamic routing, and dark-mode toggling.",
+"technologies": [
+"React",
+"Tailwind CSS",
+"JavaScript",
+"REST API"
+],
+"learningOutcome": "Demonstrates the practical integration of your matched styling capabilities with modern React state management and API workflows."
+},
+{
+"title": "TypeScript Task Manager",
+"description": "A structured Kanban board application supporting task creation, categorization, priority levels, and data persistence via browser localStorage.",
+"technologies": [
+"TypeScript",
+"HTML5",
+"CSS3",
+"JavaScript"
+],
+"learningOutcome": "Validates the transition from standard JavaScript to strongly-typed TypeScript codebases, highlighting strict data safety."
+}
+],
+"certificationRecommendations": [
+{
+"name": "Meta Front-End Developer Professional Certificate",
+"issuer": "Coursera / Meta",
+"value": "Provides industry-recognized validation of HTML, CSS, Git, JavaScript, and React skills, helping offset the minor professional experience gap."
+},
+{
+"name": "Front End Development Libraries Certification",
+"issuer": "freeCodeCamp",
+"value": "An interactive, project-based credential that verifies practical competency in building user interfaces with React."
+}
+],
+"learningRoadmap": [],
+"jobRecommendations": [],
+"overallRecommendation": "Your strong foundation in core frontend skills like Tailwind CSS, Git, and REST API integration positions you well for this application. To maximize your chances of securing the role, immediately update your resume with a project section to bridge the experience gap, highlight collaborative accomplishments, and begin structured learning in React and TypeScript."
+}

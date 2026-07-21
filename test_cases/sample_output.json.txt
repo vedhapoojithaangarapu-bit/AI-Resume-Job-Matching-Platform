@@ -1,0 +1,500 @@
+{
+  "resume_json": {
+    "candidateName": "VASMITHA MALLAPAREDDY",
+    "contactInfo": {
+      "email": "mvasmitha07@gmail.com",
+      "phone": "+91 9390549660",
+      "location": null,
+      "links": [
+        {
+          "label": "LinkedIn",
+          "url": "linkedin.com/in/vasmitha-mallapareddy"
+        },
+        {
+          "label": "Portfolio",
+          "url": "vasmitha-portfolio.vercel.app"
+        }
+      ]
+    },
+    "education": [
+      {
+        "degree": "Bachelor of Technology (B.Tech)",
+        "major": "Computer Science and Design",
+        "institution": "Sagi Rama Krishnam Raju Engineering College (SRKR)",
+        "graduationYear": "Present",
+        "location": null,
+        "honors": "CGPA: 9.23/10"
+      },
+      {
+        "degree": "Higher Secondary Certificate (MPC)",
+        "major": "MPC",
+        "institution": "MP & EV English Medium School",
+        "graduationYear": "Apr 2024",
+        "location": null,
+        "honors": "Percentage: 89.8%"
+      },
+      {
+        "degree": "Secondary School Certificate",
+        "major": null,
+        "institution": "Sri Chaitanya Boon School",
+        "graduationYear": "Mar 2022",
+        "location": null,
+        "honors": "Percentage: 92.1%"
+      }
+    ],
+    "workExperience": [
+      {
+        "jobTitle": "MERN Stack Developer Intern",
+        "company": "The Entrepreneurship Network (TEN)",
+        "location": null,
+        "startDate": "May 2026",
+        "endDate": "June 2026",
+        "description": "Completed and deployed a personal portfolio website as part of internship deliverables.",
+        "responsibilities": [],
+        "accomplishments": []
+      }
+    ],
+    "technicalSkills": [
+      "C",
+      "Java",
+      "Python",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Windows",
+      "Linux",
+      "GitHub",
+      "VS Code",
+      "Figma",
+      "Canva",
+      "Vercel"
+    ],
+    "softSkills": [],
+    "projects": [
+      {
+        "title": "NutriFit – Nutrition & Workout Planner",
+        "description": "Developed a nutrition and workout planning web application. Contributed to the Daily Tasks & Consistency Tracking module and frontend UI during a 24-hour hackathon.",
+        "technologies": [],
+        "role": null
+      },
+      {
+        "title": "Jo's Kitchen – Restaurant Website",
+        "description": "Contributed to frontend development and UI design using HTML and CSS in a team-based web project.",
+        "technologies": [
+          "HTML",
+          "CSS"
+        ],
+        "role": null
+      },
+      {
+        "title": "Personal Portfolio Website",
+        "description": "Designed and developed a responsive portfolio website to showcase projects, achievements, and professional experience. Integrated EmailJS for contact functionality and deployed the website using GitHub and Vercel.",
+        "technologies": [
+          "EmailJS",
+          "GitHub",
+          "Vercel"
+        ],
+        "role": null
+      },
+      {
+        "title": "NutriDelight Student Startup Initiative",
+        "description": "Supported startup operations and customer engagement during campus events, serving 400+ customers. Designed promotional creatives and digital content for startup and campus initiatives.",
+        "technologies": [
+          "Canva"
+        ],
+        "role": null
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Prompt Engineering & Generative AI Program",
+        "issuingOrganization": null,
+        "issueDate": "Currently undergoing training",
+        "expirationDate": null
+      }
+    ],
+    "achievements": [
+      {
+        "title": "1st Place – AI-Powered Poster Design Competition (2025)",
+        "description": "Designed and presented an AI-assisted poster on Gender Equality using DALL·E, ChatGPT, and Canva.",
+        "date": "2025"
+      },
+      {
+        "title": "1st Place (Special Prize Category) – Vedic Vision Hackathon",
+        "description": "Awarded for developing NutriFit, a nutrition and workout planning web application.",
+        "date": null
+      },
+      {
+        "title": "3rd Academic Topper – 1st Year Computer Science and Design (CSD)",
+        "description": null,
+        "date": null
+      }
+    ]
+  },
+  "jd_json": {
+    "jobTitle": "Senior Frontend Engineer",
+    "company": "InnovateTech Solutions",
+    "employmentType": "Full-Time Position",
+    "location": "Hybrid (Austin, TX)",
+    "requiredSkills": [
+      "Masterful command of core web fundamentals",
+      "Building highly interactive user interfaces"
+    ],
+    "preferredSkills": [
+      "Experience working with state management libraries",
+      "Docker containerization",
+      "AWS deployments",
+      "Bachelor's or Master's degree in Computer Science or a related technical field"
+    ],
+    "requiredExperience": "Minimum of 5+ years of professional software engineering experience.",
+    "educationRequirements": [],
+    "responsibilities": [
+      "Architect, develop, and maintain responsive web applications using React v18 and Next.js.",
+      "Optimize application performance for maximum speed and scalability.",
+      "Mentor junior developers and participate in code reviews to ensure high code quality."
+    ],
+    "requiredCertifications": [],
+    "technologies": [
+      "React v18",
+      "Next.js",
+      "HTML5",
+      "CSS3",
+      "JavaScript (ES6+)",
+      "Redux Toolkit",
+      "Docker",
+      "AWS"
+    ],
+    "softSkills": [
+      "Exceptional problem-solving skills",
+      "Collaborative team-player mindset"
+    ],
+    "benefits": [
+      "Competitive salary with annual performance bonus.",
+      "Comprehensive health, dental, and vision insurance coverage.",
+      "Unlimited Paid Time Off (PTO)."
+    ]
+  },
+  "analysis_json": {
+    "goal": "Applying for a Job",
+    "candidateFitScore": 20,
+    "careerReadinessScore": null,
+    "matchedSkills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "GitHub",
+      "Vercel"
+    ],
+    "missingSkills": [
+      "React v18",
+      "Next.js",
+      "Redux Toolkit",
+      "Docker",
+      "AWS",
+      "State management libraries"
+    ],
+    "transferableSkills": [
+      "Figma",
+      "Python",
+      "Java",
+      "C"
+    ],
+    "experienceMatch": "The candidate has approximately 1 month of professional internship experience as a MERN Stack Developer Intern. This does not meet the required minimum of 5+ years of professional software engineering experience specified for this Senior Frontend Engineer role.",
+    "educationMatch": "The candidate is currently pursuing a Bachelor of Technology (B.Tech) in Computer Science and Design (CGPA: 9.23). This aligns well with the preferred qualification of a Bachelor's degree in Computer Science or a related technical field, though it is currently in progress.",
+    "projectMatch": "The candidate's projects (Jo's Kitchen, NutriFit, Personal Portfolio) demonstrate hands-on experience with core web technologies (HTML, CSS) and basic deployment (Vercel, GitHub). However, they do not demonstrate experience with the advanced senior-level technologies required by the job, such as React v18, Next.js, or state management.",
+    "overallAnalysis": "There is a highly significant alignment gap. The candidate is an entry-level student with strong academic standing and foundational web development skills, whereas this position is for a Senior Frontend Engineer requiring 5+ years of experience, mentoring capabilities, and advanced expertise in React, Next.js, and cloud/containerization technologies (AWS, Docker).",
+    "confidence": "High"
+  },
+  "recommendation_json": {
+    "goal": "Applying for a Specific Job",
+    "resumeImprovements": [
+      {
+        "section": "Projects",
+        "suggestion": "Refactor existing projects (such as Jo's Kitchen or NutriFit) from static HTML/CSS to dynamic frameworks like React v18, and explicitly document this upgrade in your project descriptions.",
+        "example": "Jo's Kitchen: Rebuilt a responsive web application using React v18, leveraging functional components and Hooks to manage local UI state, resulting in a 40% improvement in page transition speeds."
+      },
+      {
+        "section": "Skills",
+        "suggestion": "Restructure your skills section to group items by technical category, elevating core frontend technologies and incorporating your design-to-code transferable skills to align with modern engineering workflows.",
+        "example": "Frontend Engineering: JavaScript (ES6+), HTML5, CSS3 | Design & Prototyping: Figma | Version Control & Deployment: Git, GitHub, Vercel"
+      },
+      {
+        "section": "Professional Experience",
+        "suggestion": "Quantify and elaborate on the technical tasks completed during your MERN Stack Developer Internship, emphasizing collaboration, code reviews, and deploy cycles.",
+        "example": "MERN Stack Developer Intern: Developed interactive frontend components using JavaScript, utilized Git/GitHub for version control within a team environment, and deployed application updates via Vercel."
+      }
+    ],
+    "skillRecommendations": [
+      {
+        "skill": "React v18",
+        "priority": "High",
+        "learningObjective": "Master core concepts of React v18, including the virtual DOM, functional components, hooks (useState, useEffect, useContext), and custom hooks."
+      },
+      {
+        "skill": "Redux Toolkit",
+        "priority": "High",
+        "learningObjective": "Understand global state management architecture, store configuration, actions, reducers, and integration with React applications using Redux Toolkit."
+      },
+      {
+        "skill": "Next.js",
+        "priority": "Medium",
+        "learningObjective": "Learn server-side rendering (SSR), static site generation (SSG), client-side routing, and optimization techniques within the Next.js framework."
+      }
+    ],
+    "projectRecommendations": [
+      {
+        "title": "Interactive E-Commerce Frontend",
+        "description": "Build a responsive web storefront featuring product filtering, a dynamic shopping cart, and mock checkout workflows, integrated with global state management.",
+        "technologies": [
+          "React v18",
+          "Redux Toolkit",
+          "Tailwind CSS"
+        ],
+        "learningOutcome": "Demonstrates practical proficiency in React v18 functional components and complex global state management, addressing critical gaps."
+      },
+      {
+        "title": "Serverless Content Platform",
+        "description": "Develop an SEO-optimized blog or content platform using Next.js, leveraging file-based routing and Static Site Generation.",
+        "technologies": [
+          "Next.js",
+          "CSS Modules",
+          "Vercel"
+        ],
+        "learningOutcome": "Validates familiarity with React-based meta-frameworks, performance optimization, and professional deployment pipelines."
+      }
+    ],
+    "certificationRecommendations": [
+      {
+        "name": "Meta Front-End Developer Professional Certificate",
+        "issuer": "Coursera / Meta",
+        "value": "Provides industry-recognized verification of fundamental frontend development, version control with Git, and structured React applications."
+      },
+      {
+        "name": "AWS Certified Cloud Practitioner",
+        "issuer": "Amazon Web Services",
+        "value": "Establishes baseline knowledge of AWS cloud services and infrastructure, directly addressing the cloud deployment technologies requested in the target profile."
+      }
+    ],
+    "learningRoadmap": [],
+    "jobRecommendations": [],
+    "overallRecommendation": "Your current profile showcases a strong academic foundation (9.23 CGPA) and solid fundamental web skills (HTML, CSS, JS). However, there is an extensive experience gap for this Senior Frontend Engineer role, which requires 5+ years of experience and advanced architecture capabilities. To maximize your immediate competitiveness, focus on upgrading your projects using React v18 and Redux Toolkit, and target Junior Frontend Developer or Frontend Intern roles to build the required professional track record."
+  },
+  "validation_report": {
+    "isValid": true,
+    "validationStatus": "WARNING",
+    "correctedOutput": {
+      "analysis": {
+        "goal": "Applying for a Job",
+        "candidateFitScore": 20,
+        "careerReadinessScore": null,
+        "matchedSkills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "GitHub",
+          "Vercel"
+        ],
+        "missingSkills": [
+          "React v18",
+          "Next.js",
+          "Redux Toolkit",
+          "Docker",
+          "AWS",
+          "State management libraries"
+        ],
+        "transferableSkills": [
+          "Figma",
+          "Python",
+          "Java",
+          "C"
+        ],
+        "experienceMatch": "The candidate has approximately 1 month of professional internship experience as a MERN Stack Developer Intern. This does not meet the required minimum of 5+ years of professional software engineering experience specified for this Senior Frontend Engineer role.",
+        "educationMatch": "The candidate is currently pursuing a Bachelor of Technology (B.Tech) in Computer Science and Design (CGPA: 9.23). This aligns well with the preferred qualification of a Bachelor's degree in Computer Science or a related technical field, though it is currently in progress.",
+        "projectMatch": "The candidate's projects (Jo's Kitchen, NutriFit, Personal Portfolio) demonstrate hands-on experience with core web technologies (HTML, CSS) and basic deployment (Vercel, GitHub). However, they do not demonstrate experience with the advanced senior-level technologies required by the job, such as React v18, Next.js, or state management.",
+        "overallAnalysis": "There is a highly significant alignment gap. The candidate is an entry-level student with strong academic standing and foundational web development skills, whereas this position is for a Senior Frontend Engineer requiring 5+ years of experience, mentoring capabilities, and advanced expertise in React, Next.js, and cloud/containerization technologies (AWS, Docker).",
+        "confidence": "High"
+      },
+      "recommendations": {
+        "goal": "Applying for a Job",
+        "resumeImprovements": [
+          {
+            "section": "Projects",
+            "suggestion": "Refactor existing projects (such as Jo's Kitchen or NutriFit) from static HTML/CSS to dynamic frameworks like React v18, and explicitly document this upgrade in your project descriptions.",
+            "example": "Jo's Kitchen: Rebuilt a responsive web application using React v18, leveraging functional components and Hooks to manage local UI state, resulting in a 40% improvement in page transition speeds."
+          },
+          {
+            "section": "Skills",
+            "suggestion": "Restructure your skills section to group items by technical category, elevating core frontend technologies and incorporating your design-to-code transferable skills to align with modern engineering workflows.",
+            "example": "Frontend Engineering: JavaScript (ES6+), HTML5, CSS3 | Design & Prototyping: Figma | Version Control & Deployment: Git, GitHub, Vercel"
+          },
+          {
+            "section": "Professional Experience",
+            "suggestion": "Quantify and elaborate on the technical tasks completed during your MERN Stack Developer Internship, emphasizing collaboration, code reviews, and deploy cycles.",
+            "example": "MERN Stack Developer Intern: Developed interactive frontend components using JavaScript, utilized Git/GitHub for version control within a team environment, and deployed application updates via Vercel."
+          }
+        ],
+        "skillRecommendations": [
+          {
+            "skill": "React v18",
+            "priority": "High",
+            "learningObjective": "Master core concepts of React v18, including the virtual DOM, functional components, hooks (useState, useEffect, useContext), and custom hooks."
+          },
+          {
+            "skill": "Redux Toolkit",
+            "priority": "High",
+            "learningObjective": "Understand global state management architecture, store configuration, actions, reducers, and integration with React applications using Redux Toolkit."
+          },
+          {
+            "skill": "Next.js",
+            "priority": "Medium",
+            "learningObjective": "Learn server-side rendering (SSR), static site generation (SSG), client-side routing, and optimization techniques within the Next.js framework."
+          }
+        ],
+        "projectRecommendations": [
+          {
+            "title": "Interactive E-Commerce Frontend",
+            "description": "Build a responsive web storefront featuring product filtering, a dynamic shopping cart, and mock checkout workflows, integrated with global state management.",
+            "technologies": [
+              "React v18",
+              "Redux Toolkit",
+              "Tailwind CSS"
+            ],
+            "learningOutcome": "Demonstrates practical proficiency in React v18 functional components and complex global state management, addressing critical gaps."
+          },
+          {
+            "title": "Serverless Content Platform",
+            "description": "Develop an SEO-optimized blog or content platform using Next.js, leveraging file-based routing and Static Site Generation.",
+            "technologies": [
+              "Next.js",
+              "CSS Modules",
+              "Vercel"
+            ],
+            "learningOutcome": "Validates familiarity with React-based meta-frameworks, performance optimization, and professional deployment pipelines."
+          }
+        ],
+        "certificationRecommendations": [
+          {
+            "name": "Meta Front-End Developer Professional Certificate",
+            "issuer": "Coursera / Meta",
+            "value": "Provides industry-recognized verification of fundamental frontend development, version control with Git, and structured React applications."
+          },
+          {
+            "name": "AWS Certified Cloud Practitioner",
+            "issuer": "Amazon Web Services",
+            "value": "Establishes baseline knowledge of AWS cloud services and infrastructure, directly addressing the cloud deployment technologies requested in the target profile."
+          }
+        ],
+        "learningRoadmap": [],
+        "jobRecommendations": [],
+        "overallRecommendation": "Your current profile showcases a strong academic foundation (9.23 CGPA) and solid fundamental web skills (HTML, CSS, JS). However, there is an extensive experience gap for this Senior Frontend Engineer role, which requires 5+ years of experience and advanced architecture capabilities. To maximize your immediate competitiveness, focus on upgrading your projects using React v18 and Redux Toolkit, and target Junior Frontend Developer or Frontend Intern roles to build the required professional track record."
+      }
+    },
+    "errors": [],
+    "warnings": [
+      {
+        "field": "goal",
+        "message": "Slight string mismatch for goal field between Analysis ('Applying for a Job') and Recommendation ('Applying for a Specific Job'). Normalized both to 'Applying for a Job' for strict logical consistency."
+      }
+    ],
+    "summary": "Validation passed with minor non-blocking warnings. The output values are highly consistent, evidence-backed, and structurally compliant with Goal A constraints (empty roadmap and job recommendations arrays, null career readiness score)."
+  },
+  "final_report": {
+    "goal": "Applying for a Job",
+    "candidateFitScore": 20,
+    "careerReadinessScore": null,
+    "matchedSkills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "GitHub",
+      "Vercel"
+    ],
+    "missingSkills": [
+      "React v18",
+      "Next.js",
+      "Redux Toolkit",
+      "Docker",
+      "AWS",
+      "State management libraries"
+    ],
+    "transferableSkills": [
+      "Figma",
+      "Python",
+      "Java",
+      "C"
+    ],
+    "overallAnalysis": "A significant experience and alignment gap exists between your current profile and the target position. While you possess a strong academic background and solid foundational skills in web development, this Senior Frontend Engineer role requires over five years of professional experience, advanced capabilities in React and Next.js, and familiarity with cloud and containerization tools like AWS and Docker.",
+    "resumeImprovements": [
+      {
+        "section": "Projects",
+        "suggestion": "Refactor key portfolio projects (such as Jo's Kitchen or NutriFit) from static HTML/CSS to dynamic frameworks like React v18, and explicitly document this migration in your project descriptions.",
+        "example": "Jo's Kitchen: Rebuilt a responsive web application using React v18, leveraging functional components and Hooks to manage local UI state, resulting in a 40% improvement in page transition speeds."
+      },
+      {
+        "section": "Skills",
+        "suggestion": "Group your technical skills by category, highlighting core frontend technologies and integrating design-to-code transferable skills to match modern development workflows.",
+        "example": "Frontend Engineering: JavaScript (ES6+), HTML5, CSS3 | Design & Prototyping: Figma | Version Control & Deployment: Git, GitHub, Vercel"
+      },
+      {
+        "section": "Professional Experience",
+        "suggestion": "Quantify and expand on the technical contributions from your MERN Stack Developer Internship, emphasizing team collaboration, code reviews, and deployment processes.",
+        "example": "MERN Stack Developer Intern: Built interactive frontend components with JavaScript, utilized Git/GitHub for version control within an agile team, and deployed production-ready application updates via Vercel."
+      }
+    ],
+    "skillRecommendations": [
+      {
+        "skill": "React v18",
+        "priority": "High",
+        "learningObjective": "Master core React v18 concepts, focusing on the virtual DOM, functional components, standard hooks (useState, useEffect, useContext), and custom hooks."
+      },
+      {
+        "skill": "Redux Toolkit",
+        "priority": "High",
+        "learningObjective": "Understand global state management architecture, including store configuration, actions, reducers, and seamless integration with React applications."
+      },
+      {
+        "skill": "Next.js",
+        "priority": "Medium",
+        "learningObjective": "Gain proficiency in server-side rendering (SSR), static site generation (SSG), client-side routing, and performance optimization techniques within Next.js."
+      }
+    ],
+    "projectRecommendations": [
+      {
+        "title": "Interactive E-Commerce Frontend",
+        "description": "Build a highly responsive e-commerce storefront featuring dynamic product filtering, interactive shopping cart capabilities, and simulated checkout flows powered by global state management.",
+        "technologies": [
+          "React v18",
+          "Redux Toolkit",
+          "Tailwind CSS"
+        ],
+        "learningOutcome": "Demonstrates practical competence with React v18 functional components and complex global state management using Redux Toolkit."
+      },
+      {
+        "title": "Serverless Content Platform",
+        "description": "Develop an SEO-optimized content platform using Next.js, implementing file-based routing, server-side data fetching, and Static Site Generation.",
+        "technologies": [
+          "Next.js",
+          "CSS Modules",
+          "Vercel"
+        ],
+        "learningOutcome": "Validates hands-on knowledge of production-ready React meta-frameworks, performance optimization, and modern deployment pipelines."
+      }
+    ],
+    "certificationRecommendations": [
+      {
+        "name": "Meta Front-End Developer Professional Certificate",
+        "issuer": "Coursera / Meta",
+        "value": "Validates core frontend engineering skills, including version control, responsive UI development, and practical React application architecture."
+      },
+      {
+        "name": "AWS Certified Cloud Practitioner",
+        "issuer": "Amazon Web Services",
+        "value": "Establishes a solid baseline of AWS cloud infrastructure and deployment methodologies, directly addressing modern DevOps expectations."
+      }
+    ],
+    "learningRoadmap": [],
+    "jobRecommendations": [],
+    "overallRecommendation": "Your profile demonstrates a stellar academic foundation (9.23 CGPA) and strong core web development skills. However, a significant experience gap remains for this Senior Frontend Engineer role, which demands over five years of professional leadership and advanced system design. To maximize your career traction, prioritize modernizing your portfolio with React v18 and Redux Toolkit, and initially target Junior Frontend Developer or Frontend Internship roles to gain essential industry experience.",
+    "executiveSummary": "While the candidate displays excellent academic achievement and solid foundational web skills, a substantial alignment gap exists for this Senior Frontend Engineer position due to the 5+ years of professional experience required. To bridge this gap, the candidate should upgrade their project portfolio with modern frameworks like React and Next.js while targeting junior-level or internship roles to establish a proven professional track record."
+  }
+}

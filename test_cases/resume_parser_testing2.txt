@@ -1,0 +1,92 @@
+Jane Doe
+jane.doe@dev.io | +1-555-0199 | SF, CA
+linkedin.com/in/janedoe | github.com/jdoe
+
+EDUCATION
+B.S. in Computer Science (Summa Cum Laude) - Stanford University (Graduated: June '25)
+
+EXPERIENCE
+Lead Frontend Engineer | TechCorp Inc. | 08/2025 - Present
+Spearheaded the migration of a legacy system to React.js, reducing load times by 40%. Collaborated with UI/UX teams to implement responsive Figma designs. Managed a sprint team of 4 junior developers.
+
+Software Engineering Intern | TechCorp Inc. | May 2024 - August 2024
+Wrote unit tests using Jest. Fixed 50+ bugs in the core JavaScript codebase. 
+
+TECHNICAL SKILLS
+Languages/Frameworks: React.js, Next.js, TypeScript, HTML5, CSS3, JavaScript (ES6+)
+Methodologies: Agile/Scrum, Test-Driven Development (TDD)
+
+
+{
+"candidateName": "Jane Doe",
+"contactInfo": {
+"email": "jane.doe@dev.io",
+"phone": "+1-555-0199",
+"location": "SF, CA",
+"links": [
+{
+"label": "LinkedIn",
+"url": "linkedin.com/in/janedoe"
+},
+{
+"label": "GitHub",
+"url": "github.com/jdoe"
+}
+]
+},
+"education": [
+{
+"degree": "B.S.",
+"major": "Computer Science",
+"institution": "Stanford University",
+"graduationYear": "June '25",
+"location": null,
+"honors": "Summa Cum Laude"
+}
+],
+"workExperience": [
+{
+"jobTitle": "Lead Frontend Engineer",
+"company": "TechCorp Inc.",
+"location": null,
+"startDate": "08/2025",
+"endDate": "Present",
+"description": null,
+"responsibilities": [
+"Collaborated with UI/UX teams to implement responsive Figma designs.",
+"Managed a sprint team of 4 junior developers."
+],
+"accomplishments": [
+"Spearheaded the migration of a legacy system to React.js, reducing load times by 40%."
+]
+},
+{
+"jobTitle": "Software Engineering Intern",
+"company": "TechCorp Inc.",
+"location": null,
+"startDate": "May 2024",
+"endDate": "August 2024",
+"description": null,
+"responsibilities": [
+"Wrote unit tests using Jest."
+],
+"accomplishments": [
+"Fixed 50+ bugs in the core JavaScript codebase."
+]
+}
+],
+"technicalSkills": [
+"React.js",
+"Next.js",
+"TypeScript",
+"HTML5",
+"CSS3",
+"JavaScript (ES6+)",
+"Agile/Scrum",
+"Test-Driven Development (TDD)"
+],
+"softSkills": [],
+"projects": [],
+"certifications": [],
+"achievements": []
+}

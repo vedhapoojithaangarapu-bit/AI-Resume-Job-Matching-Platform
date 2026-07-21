@@ -1,0 +1,78 @@
+{
+  "activeGoal": "Applying for a Job",
+  "resumeParserOutput": {
+    "candidateName": "Jordan Blake",
+    "contactInfo": { "email": "jordan.b@dev.com", "phone": "555-0122", "location": "Chicago, IL", "links": [] },
+    "education": [
+      {
+        "degree": "B.S.",
+        "major": "Information Technology",
+        "institution": "Midwest Tech",
+        "graduationYear": "2024",
+        "location": null,
+        "honors": null
+      }
+    ],
+    "workExperience": [
+      {
+        "jobTitle": "Junior Frontend Developer",
+        "company": "CoreSystems",
+        "location": "Chicago, IL",
+        "startDate": "June 2024",
+        "endDate": "Present",
+        "description": "Maintained and optimized client-facing web applications.",
+        "responsibilities": ["Wrote responsive layouts using Tailwind CSS.", "Integrated RESTful APIs using JavaScript."],
+        "accomplishments": ["Improved mobile layout performance scores by 15%."]
+      }
+    ], 
+    "technicalSkills": ["JavaScript", "Tailwind CSS", "HTML5", "CSS3", "Git"],
+    "softSkills": ["Teamwork"],
+    "projects": [], 
+    "certifications": [],
+    "achievements": []
+  },
+  "jdParserOutput": {
+    "jobTitle": "Frontend Engineer",
+    "company": "PixelPerfect UI",
+    "employmentType": "Full-time",
+    "location": "Remote",
+    "requiredSkills": ["Building responsive layouts with utility classes", "REST API Integration"],
+    "preferredSkills": ["React", "TypeScript"],
+    "requiredExperience": "1+ years of frontend experience",
+    "educationRequirements": ["Bachelor's degree in IT, CS, or related field"],
+    "requiredCertifications": [],
+    "technologies": ["JavaScript", "Tailwind CSS", "HTML5", "CSS3", "Git", "React"],
+    "softSkills": ["Communication"],
+    "benefits": []
+  }
+}
+
+
+heres the output:
+{
+"goal": "Applying for a Job",
+"candidateFitScore": 72,
+"careerReadinessScore": null,
+"matchedSkills": [
+"JavaScript",
+"Tailwind CSS",
+"HTML5",
+"CSS3",
+"Git",
+"Building responsive layouts with utility classes",
+"REST API Integration"
+],
+"missingSkills": [
+"React",
+"TypeScript",
+"Communication"
+],
+"transferableSkills": [
+"Teamwork"
+],
+"experienceMatch": "The candidate has approximately 8 months of professional frontend experience, which is slightly below the required 1+ years.",
+"educationMatch": "The candidate's B.S. in Information Technology satisfies the requirement for a Bachelor's degree in IT, CS, or a related field.",
+"projectMatch": "No personal or professional projects are documented on the resume to serve as additional technical evidence.",
+"overallAnalysis": "The candidate's core technical profile strongly matches the immediate job requirements, specifically regarding Tailwind CSS and REST API integration. Educational requirements are also met. The main gaps are a slight shortfall in the required years of experience and the absence of preferred skills like React and TypeScript.",
+"confidence": "Medium"
+}

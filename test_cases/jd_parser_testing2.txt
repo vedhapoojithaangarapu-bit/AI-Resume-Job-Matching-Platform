@@ -1,0 +1,35 @@
+Looking for a rockstar React developer to help us ship our beta product ASAP! This is a remote freelance gig. You must know React inside out and have some experience with Git for version control. It would be awesome if you also know Tailwind CSS, but it's not a dealbreaker. We need someone who is a great communicator and can move incredibly fast. Hit us up with your portfolio!
+
+
+
+{
+"jobTitle": "React developer",
+"company": null,
+"employmentType": "Freelance",
+"location": "Remote",
+"requiredSkills": [
+"know React inside out",
+"experience with Git for version control"
+],
+"preferredSkills": [
+"know Tailwind CSS"
+],
+"requiredExperience": null,
+"educationRequirements": [],
+"responsibilities": [
+"help us ship our beta product ASAP!"
+],
+"requiredCertifications": [],
+"technologies": [
+"React",
+"Git",
+"Tailwind CSS"
+],
+"softSkills": [
+"great communicator",
+"can move incredibly fast"
+],
+"benefits": []
+}
+
+is it accurate? no hallucinations or additional text? json format?

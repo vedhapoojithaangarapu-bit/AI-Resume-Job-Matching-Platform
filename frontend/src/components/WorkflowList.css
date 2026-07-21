@@ -1,0 +1,77 @@
+.workflow-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.workflow-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 0;
+}
+
+.workflow-item:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 13px;
+  top: 44px;
+  width: 1px;
+  height: calc(100% - 22px);
+  background: var(--color-border);
+}
+
+.workflow-marker {
+  flex-shrink: 0;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  z-index: 1;
+  background: var(--color-bg);
+}
+
+.workflow-marker-complete {
+  background: var(--color-ink);
+  color: var(--color-surface);
+}
+
+.workflow-marker-active {
+  border: 1px solid var(--color-border);
+}
+
+.workflow-marker-pending {
+  border: 1px solid var(--color-border);
+}
+
+.workflow-marker-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-border);
+  display: inline-block;
+}
+
+.workflow-label {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.workflow-marker-pending ~ .workflow-label {
+  color: var(--color-muted);
+  font-weight: 500;
+}
+
+.workflow-status {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  white-space: nowrap;
+}

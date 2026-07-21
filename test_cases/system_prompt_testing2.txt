@@ -1,0 +1,160 @@
+Goal: Applying for a Job
+Target Job:
+Frontend Developer
+Resume:
+HTML
+CSS
+JavaScript
+React
+Built an e-commerce website.
+Job Description:
+Looking for React developer with HTML CSS JavaScript Git.
+
+{
+
+  "goal": "APPLYING_FOR_A_SPECIFIC_JOB",
+
+  "target_job": "Frontend Developer",
+
+  "candidate_fit_score": 65,
+
+  "compatibility_analysis": {
+
+    "overall_evaluation": "The candidate has strong alignment with the core programming languages and frameworks required (React, HTML, CSS, JavaScript). However, the resume is highly minimalist, lacking structural depth, professional experience history, and one key technical requirement (Git).",
+
+    "skills_match": {
+
+      "matched_skills": [
+
+        "HTML",
+
+        "CSS",
+
+        "JavaScript",
+
+        "React"
+
+      ],
+
+      "missing_skills": [
+
+        "Git"
+
+      ]
+
+    },
+
+    "experience_evaluation": "The candidate lists one practical project ('Built an e-commerce website') which is highly relevant to frontend development, but does not document any professional employment history, durations, or metrics.",
+
+    "education_evaluation": "No educational background or credentials are documented in the resume."
+
+  },
+
+  "identified_gaps": {
+
+    "skill_gaps": [
+
+      {
+
+        "skill": "Git",
+
+        "priority": "High",
+
+        "rationale": "Explicitly required in the job description for version control and collaboration."
+
+      }
+
+    ],
+
+    "data_gaps": [
+
+      "Professional employment history (companies, job titles, employment dates).",
+
+      "Educational qualifications (degrees, certifications, or self-taught paths).",
+
+      "Detailed project metrics and technical stack details for the e-commerce website."
+
+    ]
+
+  },
+
+  "recommendations": {
+
+    "resume_optimizations": [
+
+      {
+
+        "section": "Skills",
+
+        "action": "Add 'Git' and 'GitHub' to your technical skills list if you have experience using them for version control.",
+
+        "rationale": "Directly aligns the resume with the specific tooling required by the job description."
+
+      },
+
+      {
+
+        "section": "Projects",
+
+        "action": "Expand the 'e-commerce website' description. Specify the technologies used (e.g., React, HTML5, CSS3, JavaScript ES6), key features implemented (such as state management, product filtering, responsive design), and include a link to the live website or GitHub repository.",
+
+        "rationale": "Provides concrete evidence of your practical application of React and frontend development practices."
+
+      },
+
+      {
+
+        "section": "Structure",
+
+        "action": "Incorporate standard professional resume sections, including a brief Professional Summary, an Education/Certifications section, and Contact Information.",
+
+        "rationale": "Meets standard professional resume formats and ensures essential recruiter-facing information is present."
+
+      }
+
+    ],
+
+    "learning_recommendations": [
+
+      {
+
+        "topic": "Git & GitHub Version Control",
+
+        "focus": "Learn essential Git operations (init, clone, status, add, commit, push, pull, branch, merge) and managing repositories on GitHub.",
+
+        "estimated_timeframe": "1-2 weeks"
+
+      }
+
+    ],
+
+    "suggested_projects": [
+
+      {
+
+        "title": "Version-Controlled Portfolio Project",
+
+        "description": "Initialize a Git repository for your e-commerce project, push the source code to GitHub with a descriptive README.md file, and deploy the application to a free hosting provider (e.g., Vercel, Netlify, or GitHub Pages).",
+
+        "skills_addressed": [
+
+          "Git",
+
+          "GitHub",
+
+          "React",
+
+          "Web Deployment"
+
+        ]
+
+      }
+
+    ],
+
+    "certifications": []
+
+  }
+
+} 
+

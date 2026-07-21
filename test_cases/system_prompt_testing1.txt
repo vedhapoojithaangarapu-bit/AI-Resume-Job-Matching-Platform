@@ -1,0 +1,62 @@
+Goal: Applying for a Job
+Target Job:
+Frontend Developer
+Generate recommendations.
+
+{
+
+  "goal": "APPLYING_FOR_A_SPECIFIC_JOB",
+
+  "target_job": "Frontend Developer",
+
+  "status": "INCOMPLETE_INPUT",
+
+  "candidate_fit_score": null,
+
+  "compatibility_analysis": {
+
+    "experience_evaluation": null,
+
+    "skills_evaluation": null,
+
+    "education_evaluation": null
+
+  },
+
+  "identified_gaps": {
+
+    "skill_gaps": [],
+
+    "experience_gaps": [],
+
+    "data_gaps": [
+
+      "Resume text is missing. Please provide your resume to evaluate compatibility against the Frontend Developer target role.",
+
+      "Specific Job Description is missing. Please provide the target job description to allow for a direct, tactical compatibility assessment."
+
+    ]
+
+  },
+
+  "recommendations": {
+
+    "resume_optimizations": [],
+
+    "upskilling_pathways": [],
+
+    "suggested_projects": [],
+
+    "recommended_certifications": []
+
+  },
+
+  "next_steps": [
+
+    "Upload or paste your resume text.",
+
+    "Provide the complete job description for the Frontend Developer role you are targeting."
+
+  ]
+
+}

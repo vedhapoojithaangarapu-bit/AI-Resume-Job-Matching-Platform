@@ -1,0 +1,33 @@
+.loading-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 28px 0 8px;
+}
+
+.loading-bar {
+  flex: 1;
+  height: var(--bar-height);
+  background: linear-gradient(180deg, #b9bac0, #d6d5d1);
+  border-radius: 3px;
+  animation: bar-pulse 1.4s ease-in-out infinite;
+  transform-origin: bottom;
+}
+
+@keyframes bar-pulse {
+  0%,
+  100% {
+    transform: scaleY(0.75);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loading-bar {
+    animation: none;
+  }
+}

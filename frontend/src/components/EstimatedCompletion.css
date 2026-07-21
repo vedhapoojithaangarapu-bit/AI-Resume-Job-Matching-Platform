@@ -1,0 +1,9 @@
+.estimated-completion {
+  padding: 24px 0;
+}
+
+.estimated-completion-value {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 8px;
+}

@@ -1,0 +1,121 @@
+.goal-section {
+  border-bottom: 1px solid var(--color-border);
+  padding: 40px 0 48px;
+}
+
+.goal-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+
+.goal-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.goal-hint {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.goal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.goal-card {
+  position: relative;
+  text-align: left;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.goal-card-selected {
+  background: var(--color-ink);
+  border-color: var(--color-ink);
+  color: var(--color-surface);
+}
+
+.goal-card-indicator {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--color-muted);
+  margin-bottom: auto;
+}
+
+.goal-card-selected .goal-card-indicator {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  border-color: var(--color-surface);
+}
+
+.goal-card-body {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.goal-card-title {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.goal-card-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-ink-soft);
+  max-width: 34ch;
+}
+
+.goal-card-selected .goal-card-description {
+  color: #c9cace;
+}
+
+.goal-card-tag {
+  align-self: flex-end;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-top: 16px;
+}
+
+.goal-card-selected .goal-card-tag {
+  color: #9a9ca3;
+}
+
+@media (max-width: 720px) {
+  .goal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .goal-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
