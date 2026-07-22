@@ -37,6 +37,8 @@ async def job_match(
     
     except Exception as e:
         message = str(e)
+        print(f"ERROR in /analyze/job-match: {message}")
+        print(traceback.format_exc())
 
         if "RESOURCE_EXHAUSTED" in message or "429" in message:
             raise HTTPException(
@@ -50,9 +52,21 @@ async def job_match(
                 detail="Gemini is currently experiencing high demand. Please try again shortly."
             )
 
+        if "Invalid API key" in message or "API_KEY" in message:
+            raise HTTPException(
+                status_code=401,
+                detail="Invalid API key. Please check your Gemini API configuration."
+            )
+
+        if "not found" in message.lower() or "does not exist" in message.lower():
+            raise HTTPException(
+                status_code=400,
+                detail="The specified Gemini model is not available. Please contact support."
+            )
+
         raise HTTPException(
             status_code=500,
-            detail=message
+            detail=f"Analysis failed: {message}"
         )
 
     finally:
