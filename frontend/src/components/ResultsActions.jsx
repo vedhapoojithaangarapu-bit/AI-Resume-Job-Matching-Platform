@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import html2pdf from 'html2pdf.js'
 
 // ResultsActions
 //
@@ -12,7 +13,28 @@ function ResultsActions({ onDownloadPdf }) {
   const navigate = useNavigate()
 
   const handleDownload = () => {
-    if (onDownloadPdf) onDownloadPdf()
+    if (onDownloadPdf) {
+      onDownloadPdf()
+    } else {
+      const element = document.querySelector('.results-shell');
+      const actionsEl = document.querySelector('.results-actions');
+      
+      // Temporarily hide the action buttons from the generated PDF
+      if (actionsEl) actionsEl.style.display = 'none';
+
+      const opt = {
+        margin:       10,
+        filename:     'AI-Career-Intelligence-Report.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2, useCORS: true },
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      };
+
+      html2pdf().set(opt).from(element).save().then(() => {
+        // Restore action buttons after PDF is generated
+        if (actionsEl) actionsEl.style.display = 'flex';
+      });
+    }
   }
 
   const handleAnalyzeAnother = () => {

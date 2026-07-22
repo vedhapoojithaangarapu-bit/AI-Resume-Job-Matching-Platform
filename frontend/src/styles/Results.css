@@ -62,18 +62,56 @@
 }
 
 /* ---------------------------------------------------------------------- */
-/* Row / grid layout                                                      */
+/* Ordered Section Layout                                                 */
 /* ---------------------------------------------------------------------- */
 
-.results-row {
+.results-ordered-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.results-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.results-section-title {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 12px;
+}
+
+.results-section-title span {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--color-muted);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+
+.results-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-  margin-bottom: 24px;
+}
+
+.results-grid-full {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
 }
 
 @media (max-width: 960px) {
-  .results-row {
+  .results-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -393,12 +431,12 @@
 /* Roadmap row (wider left column)                                         */
 /* ---------------------------------------------------------------------- */
 
-.results-row-roadmap {
+.results-grid-roadmap {
   grid-template-columns: 1.8fr 1fr;
 }
 
 @media (max-width: 960px) {
-  .results-row-roadmap {
+  .results-grid-roadmap {
     grid-template-columns: 1fr;
   }
 }
@@ -772,5 +810,50 @@
 
   .results-action-button {
     justify-content: center;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/* Print Styles for PDF Download                                            */
+/* ---------------------------------------------------------------------- */
+
+@media print {
+  @page {
+    size: auto;
+    margin: 15mm;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  /* Hide navigation, footer, help button, and results actions */
+  nav, .navbar, footer, .footer, .help-button-container, .results-actions {
+    display: none !important;
+  }
+
+  .results-shell {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Prevent page breaks inside cards */
+  .result-card, .results-header {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    box-shadow: none !important;
+  }
+
+  /* Ensure rows lay out nicely in print */
+  .results-ordered-layout {
+    gap: 24px !important;
+    margin-bottom: 24px !important;
+  }
+  
+  .results-grid {
+    gap: 16px !important;
   }
 }

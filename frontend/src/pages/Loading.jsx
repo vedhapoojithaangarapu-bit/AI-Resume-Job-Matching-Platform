@@ -65,12 +65,16 @@ function Loading() {
       formData.append('resume', resumeFile)
 
       if (jobDescMode === "paste") {
-    formData.append("job_description", jobDescText);
-} else {
-    alert("Please use Paste Description for now.");
-    navigate("/");
-    return;
-}
+        formData.append("job_description", jobDescText);
+      } else if (jobDescMode === "upload" && jobDescFile) {
+        // Read the uploaded file as text and send it
+        const text = await jobDescFile.text();
+        formData.append("job_description", text);
+      } else {
+        alert("Please provide a job description.");
+        navigate("/");
+        return;
+      }
 
       try {
         console.log("Sending request...");
@@ -79,19 +83,133 @@ function Loading() {
           signal: controller.signal,
         })
         console.log("Backend responded:", response.data);
-        console.log("Navigating to Results...");
-        navigate('/results', { state: response.data })
+
+        // Map the backend response shape to what Results.jsx expects
+        const raw = response.data
+        const report = raw?.report ?? raw ?? {}
+
+        // Helper to ensure Gemini array outputs are actually arrays
+        const ensureArray = (val) => Array.isArray(val) ? val : (val ? [val] : [])
+
+        const matchedSkills = ensureArray(report.matchedSkills)
+        const missingSkills = ensureArray(report.missingSkills)
+        const transferableSkills = ensureArray(report.transferableSkills)
+        const score = report.candidateFitScore ?? 0
+
+        // Build a skill breakdown array from matched, transferable and missing skills
+        const skillBreakdown = [
+          ...matchedSkills.map((s) => ({ name: typeof s === 'string' ? s : s.skill ?? s.name ?? '', score: 90 })),
+          ...transferableSkills.map((s) => ({ name: typeof s === 'string' ? s : s.skill ?? s.name ?? '', score: 65 })),
+          ...missingSkills.map((s) => ({ name: typeof s === 'string' ? s : s.skill ?? s.name ?? '', score: 20 })),
+        ]
+
+        // Derive a match label from score
+        let matchLabel = 'Needs Work'
+        if (score >= 80) matchLabel = 'Excellent Match'
+        else if (score >= 60) matchLabel = 'Good Match'
+        else if (score >= 40) matchLabel = 'Moderate Match'
+
+        // Build experience insights from analysis strings
+        const experienceInsights = []
+        if (report.experienceMatch) experienceInsights.push({ type: 'strength', title: 'Experience Match', description: typeof report.experienceMatch === 'string' ? report.experienceMatch : JSON.stringify(report.experienceMatch) })
+        if (report.educationMatch) experienceInsights.push({ type: 'strength', title: 'Education Match', description: typeof report.educationMatch === 'string' ? report.educationMatch : JSON.stringify(report.educationMatch) })
+        if (report.projectMatch) experienceInsights.push({ type: 'opportunity', title: 'Project Alignment', description: typeof report.projectMatch === 'string' ? report.projectMatch : JSON.stringify(report.projectMatch) })
+        if (report.overallAnalysis) experienceInsights.push({ type: 'opportunity', title: 'Overall Analysis', description: typeof report.overallAnalysis === 'string' ? report.overallAnalysis : JSON.stringify(report.overallAnalysis) })
+
+        // Build resume suggestions from resumeImprovements
+        const resumeSuggestions = ensureArray(report.resumeImprovements).map((item) => {
+          if (typeof item === 'string') return item
+          if (item.suggestion) return `[${item.section ?? 'Tip'}] ${item.suggestion}`
+          return item.description ?? JSON.stringify(item)
+        })
+
+        // Build roadmap steps from learningRoadmap
+        const roadmapSteps = ensureArray(report.learningRoadmap).map((item) =>
+          typeof item === 'string'
+            ? { title: item, description: '' }
+            : { title: item.step ?? item.title ?? item.skill ?? '', description: item.description ?? item.resource ?? item.learningObjective ?? '' }
+        )
+
+        // Also add skillRecommendations as roadmap steps if learningRoadmap is empty
+        if (roadmapSteps.length === 0) {
+          ensureArray(report.skillRecommendations).forEach((item) => {
+            roadmapSteps.push({
+              title: typeof item === 'string' ? item : `Learn: ${item.skill ?? ''}`,
+              description: typeof item === 'string' ? '' : item.learningObjective ?? '',
+            })
+          })
+          ensureArray(report.projectRecommendations).forEach((item) => {
+            roadmapSteps.push({
+              title: typeof item === 'string' ? item : `Build: ${item.title ?? ''}`,
+              description: typeof item === 'string' ? '' : item.description ?? '',
+            })
+          })
+        }
+
+        // Build certifications
+        const certifications = ensureArray(report.certificationRecommendations).map((item) =>
+          typeof item === 'string'
+            ? { name: item, provider: '' }
+            : {
+                name: item.name ?? item.certification ?? '',
+                provider: item.provider ?? item.issuer ?? '',
+                url: item.url,
+              }
+        )
+
+        // Build job roles from jobRecommendations
+        const jobRoles = ensureArray(report.jobRecommendations).map((item) =>
+          typeof item === 'string'
+            ? { title: item, matchPercentage: score }
+            : {
+                title: item.title ?? item.role ?? item,
+                matchPercentage: item.matchPercentage ?? score,
+                fitLabel: item.fitLabel,
+                requiredSkills: ensureArray(item.requiredSkills),
+                salary: item.salary,
+                location: item.location,
+              }
+        )
+
+        const mappedData = {
+          resumeName: resumeFile.name,
+          selectedGoal: location.state?.goalLabel ?? 'Job compatibility',
+          jobTitle: jobDescMode === 'upload' && jobDescFile ? jobDescFile.name.replace(/\.[^/.]+$/, "") : 'Custom Description',
+          analysisDate: new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
+          compatibilityScore: score,
+          matchLabel,
+          headline: report.overallAnalysis ?? report.executiveSummary ?? '',
+          summary: report.executiveSummary ?? report.overallAnalysis ?? '',
+          experienceScore: score,
+          skillsScore: matchedSkills.length > 0
+            ? Math.round((matchedSkills.length / (matchedSkills.length + missingSkills.length)) * 100)
+            : 0,
+          atsScore: score,
+          confidence: report.confidence ?? 'Medium',
+          missingSkills: missingSkills.map((s) => typeof s === 'string' ? s : s.skill ?? s.name ?? ''),
+          skillBreakdown,
+          experienceInsights,
+          resumeSuggestions,
+          roadmapSteps,
+          certifications,
+          jobRoles,
+          totalSkills: matchedSkills.length + transferableSkills.length + missingSkills.length,
+          matchedSkillsCount: matchedSkills.length,
+          overallRecommendation: report.overallRecommendation ?? '',
+        }
+
+        console.log("Mapped data for Results:", mappedData);
+        navigate('/results', { state: mappedData })
       } catch (error) {
-  console.error(error);
-
-  if (error.response?.status === 429) {
-    alert("AI service is currently busy or quota has been exceeded. Please try again later.");
-  } else {
-    alert(error.response?.data?.detail || "Resume analysis failed.");
-  }
-
-  navigate("/");
-}
+        console.error(error);
+        if (error.name === 'CanceledError' || error.name === 'AbortError') return;
+        if (error.response?.status === 429) {
+          alert("AI service is currently busy or quota has been exceeded. Please wait 60 seconds and try again.");
+        } else {
+          alert(error.response?.data?.detail || "Resume analysis failed. Please try again.");
+        }
+        navigate("/");
+      }
     }
 
     runAnalysis()

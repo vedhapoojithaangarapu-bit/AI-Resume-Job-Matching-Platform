@@ -70,6 +70,8 @@ const handleAnalyze = () => {
       jobDescMode,
       jobDescFile,
       jobDescText,
+      selectedGoal,
+      goalLabel
     },
   });
 };

@@ -104,50 +104,67 @@ function Results() {
             </p>
           </header>
 
-          <div className="results-row results-row-primary">
-            <CompatibilityScoreCard
-              score={data.compatibilityScore}
-              matchLabel={data.matchLabel}
-              headline={data.headline}
-              summary={data.summary}
-              experienceScore={data.experienceScore}
-              skillsScore={data.skillsScore}
-              atsScore={data.atsScore}
-              confidence={data.confidence}
-            />
-            <ResumeSummaryCard
-              resumeName={data.resumeName}
-              selectedGoal={data.selectedGoal}
-              jobTitle={data.jobTitle}
-              analysisDate={data.analysisDate}
-              totalSkills={totalSkills}
-              matchedSkillsCount={matchedSkillsCount}
-              missingSkillsCount={missingSkills.length}
-            />
-          </div>
+          <div className="results-ordered-layout">
+            <section className="results-section">
+              <h2 className="results-section-title"><span>01</span> Overview & Compatibility</h2>
+              <div className="results-grid">
+                <CompatibilityScoreCard
+                  score={data.compatibilityScore}
+                  matchLabel={data.matchLabel}
+                  headline={data.headline}
+                  summary={data.summary}
+                  experienceScore={data.experienceScore}
+                  skillsScore={data.skillsScore}
+                  atsScore={data.atsScore}
+                  confidence={data.confidence}
+                />
+                <ResumeSummaryCard
+                  resumeName={data.resumeName}
+                  selectedGoal={data.selectedGoal}
+                  jobTitle={data.jobTitle}
+                  analysisDate={data.analysisDate}
+                  totalSkills={totalSkills}
+                  matchedSkillsCount={matchedSkillsCount}
+                  missingSkillsCount={missingSkills.length}
+                />
+              </div>
+            </section>
 
-          <div className="results-row results-row-secondary">
-            <SkillMatchCard
-              skills={skillBreakdown}
-              matchedCount={matchedSkillsCount}
-              totalCount={totalSkills}
-              matchPercentage={data.skillsScore}
-            />
-            <MissingSkillsCard missingSkills={missingSkills} />
-          </div>
+            <section className="results-section">
+              <h2 className="results-section-title"><span>02</span> Skills Analysis</h2>
+              <div className="results-grid">
+                <SkillMatchCard
+                  skills={skillBreakdown}
+                  matchedCount={matchedSkillsCount}
+                  totalCount={totalSkills}
+                  matchPercentage={data.skillsScore}
+                />
+                <MissingSkillsCard missingSkills={missingSkills} />
+              </div>
+            </section>
 
-          <div className="results-row results-row-secondary">
-            <ExperienceAnalysisCard items={data.experienceInsights ?? []} />
-            <ResumeSuggestionsCard suggestions={data.resumeSuggestions ?? []} />
-          </div>
+            <section className="results-section">
+              <h2 className="results-section-title"><span>03</span> Experience & Feedback</h2>
+              <div className="results-grid">
+                <ExperienceAnalysisCard items={data.experienceInsights ?? []} />
+                <ResumeSuggestionsCard suggestions={data.resumeSuggestions ?? []} />
+              </div>
+            </section>
 
-          <div className="results-row results-row-roadmap">
-            <CareerRoadmapCard steps={data.roadmapSteps ?? []} />
-            <CertificationsCard certifications={data.certifications ?? []} />
-          </div>
+            <section className="results-section">
+              <h2 className="results-section-title"><span>04</span> Roadmap & Next Steps</h2>
+              <div className="results-grid results-grid-roadmap">
+                <CareerRoadmapCard steps={data.roadmapSteps ?? []} />
+                <CertificationsCard certifications={data.certifications ?? []} />
+              </div>
+            </section>
 
-          <div className="results-row-full">
-            <JobRolesCard roles={data.jobRoles ?? []} />
+            <section className="results-section">
+              <h2 className="results-section-title"><span>05</span> Job Recommendations</h2>
+              <div className="results-grid-full">
+                <JobRolesCard roles={data.jobRoles ?? []} />
+              </div>
+            </section>
           </div>
 
           <ResultsActions onDownloadPdf={data.onDownloadPdf} />

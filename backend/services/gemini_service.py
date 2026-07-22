@@ -11,8 +11,10 @@ def generate_response(prompt: str) -> str:
     Raises an exception if the response is not valid JSON.
     """
 
+    import time
+    time.sleep(3)
     response = client.models.generate_content(
-        model="gemini-3.5-flash",
+        model="gemini-3.5-flash-lite",
         contents=prompt,
     )
 
