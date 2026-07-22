@@ -19,6 +19,10 @@ app.add_middleware(
         "http://127.0.0.1:5174",
         "http://localhost:5175",
         "http://127.0.0.1:5175",
+        # Deployed frontend
+        "https://ai-resume-job-matching.vercel.app",
+        "https://ai-resume-job-matching-platform.onrender.com",
+        "https://ai-resume-job-matching-platform.netlify.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
