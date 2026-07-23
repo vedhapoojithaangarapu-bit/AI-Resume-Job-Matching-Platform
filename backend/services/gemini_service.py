@@ -10,7 +10,7 @@ def _get_client():
 
 def _get_model():
     """Get the model name, refreshing from environment each time"""
-    return os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
+    return os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
 
 
 def generate_response(prompt: str, max_retries: int = 3) -> str:
