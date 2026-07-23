@@ -40,6 +40,12 @@ async def job_match(
         print(f"ERROR in /analyze/job-match: {message}")
         print(traceback.format_exc())
 
+        if "getaddrinfo failed" in message or "11001" in message:
+            raise HTTPException(
+                status_code=503,
+                detail="Network connectivity issue. Please check your internet connection and try again."
+            )
+
         if "RESOURCE_EXHAUSTED" in message or "429" in message:
             raise HTTPException(
                 status_code=429,
@@ -61,7 +67,7 @@ async def job_match(
         if "not found" in message.lower() or "does not exist" in message.lower():
             raise HTTPException(
                 status_code=400,
-                detail="The specified Gemini model is not available. Please contact support."
+                detail=f"The specified Gemini model is not available. Please contact support. Error details: {message}"
             )
 
         raise HTTPException(
