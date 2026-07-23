@@ -18,7 +18,7 @@ app = FastAPI(
 @app.on_event("startup")
 async def startup_event():
     """Log configuration on startup"""
-    model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+    model = os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
     api_key = os.getenv("GEMINI_API_KEY", "")
     print("="*60)
     print("Resume Analyzer API Starting")

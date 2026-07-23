@@ -11,8 +11,9 @@ def _get_client():
     return genai.Client(api_key=GEMINI_API_KEY)
 
 def _get_model():
-    """Get the model name, refreshing from environment each time"""
-    return os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
+    env_model = os.getenv("GEMINI_MODEL")
+    print("GEMINI_MODEL env =", env_model)
+    return env_model or "gemini-3.5-flash"
 
 
 def generate_response(prompt: str, max_retries: int = 3) -> str:
@@ -35,6 +36,7 @@ def generate_response(prompt: str, max_retries: int = 3) -> str:
             print("=" * 60)
             print("Using Gemini model:", model)
             print("=" * 60)
+            print("Final model being sent:", model)
 
             response = client.models.generate_content(
                 model=model,
