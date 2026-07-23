@@ -1,6 +1,8 @@
 import json
 import os
 import time
+from xml.parsers.expat import model
+from xmlrpc import client
 from google import genai
 
 # Initialize client once
@@ -10,7 +12,7 @@ def _get_client():
 
 def _get_model():
     """Get the model name, refreshing from environment each time"""
-    return os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+    return os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
 
 
 def generate_response(prompt: str, max_retries: int = 3) -> str:
@@ -30,6 +32,10 @@ def generate_response(prompt: str, max_retries: int = 3) -> str:
     for attempt in range(max_retries):
         try:
             print(f"[Gemini] Attempt {attempt + 1}/{max_retries}")
+            print("=" * 60)
+            print("Using Gemini model:", model)
+            print("=" * 60)
+
             response = client.models.generate_content(
                 model=model,
                 contents=prompt,
